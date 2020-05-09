@@ -1,24 +1,29 @@
-unfolding_app_template and UC San Diego/Coursera MOOC starter code
+Eartquake-Data
 ==================================================================
 
-This is a skeleton to use Unfolding in Eclipse as well as some starter
-code for the Object Oriented Programming in Java course offered by 
-UC San Diego through Coursera.
-
-A very basic Unfolding demo you'll find in the source folder in the default package. 
-For more examples visit http://unfoldingmaps.org, or download the template with
-examples.
-
-The module folders contain the starter code for the programming assignments
-associated with the MOOC.
-
-Get excited and make things!
+Name and Surname: Asel Esra Ozyilmaz
+Email: esra.ozyilmaz@iaau.edu.kg
+Student of Computer Science Department of Alatoo International University.
+Final Project.
 
 
-INSTALLATION
+A GUI created by using Processing and Unfolding Maps library functions in Eclipse IDE to display and print out the earthquakes which have occured all over the world.
 
-Import this folder in Eclipse ('File' -> 'Import' -> 'Existing Projects into
-Workspace', Select this folder, 'Finish')
+This is a project that I have created with the help of the Object Oriented Programming in Java course offered by 
+UC San Diego through Coursera. The project was half created and the other half was asked to implement throughout the course. However, in the course the project has further features but to not make it more complex I haven't added all of them.
+
+DESCRIPTION
+
+ss of the map
+
+The project has an interactive map which displays where the earthquakes have occured with the help of markers. Optionally you can work online or offline with it. If you work online GoogleMapProvider will display a map otherwise an offline map is displayed.The data of earthquakes are taken from this live RSS feed https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom and parsed by the course in order to read the data inside it. In addition, there are two more files: cityFile and countryFile. countryFile includes features of the countries such as: name, location, type. If an earthquake occurs in a particular country it is added as a marker to the map. cityFile on the other hand, includes cities and their properties just like countryFile.
+
+ss of the UMLs
+
+**As shown above, the project contains 5 classes: EarthquakeCityMap, CityMarker, EarthqukeMarker, LandQuakeMarker and OceanQuakeMarker.**
+
+- EarthquakeCityMarker;
+It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods such as isInCountry to test whether a given earthquake is in a given country. This will also add the country property to the properties of the earthquake feature if it's in one of the countries. 
 
 
 MANUAL INSTALLATION
