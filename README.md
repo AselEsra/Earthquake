@@ -31,10 +31,13 @@ catch (RuntimeException e) {
     System.out.println("Exception occured in Runtime");
 }
 ```
+### UML Class/Data Diagrams 
 
 ![cityMarker](https://user-images.githubusercontent.com/64264345/81471618-325a4780-9214-11ea-8e99-df2282f58376.png) ![UML class diagram](https://user-images.githubusercontent.com/64264345/81473170-8c600a80-921e-11ea-9533-7f2078ac851e.png)
 
 > As shown above, the project contains 5 classes: EarthquakeCityMap, CityMarker, EarthqukeMarker, LandQuakeMarker and OceanQuakeMarker. Let's further investigate them;
+
+### Five Classes
 
 **EarthquakeCityMarker Class;**
 
