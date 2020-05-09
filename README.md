@@ -23,19 +23,9 @@ The project has an interactive map which displays where the earthquakes have occ
 
 **EarthquakeCityMarker Class;**
 
-- It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods such as isInCountry to test whether a given earthquake is in a given country. This will also add the country property to the properties of the earthquake feature if it's in one of the countries. Moreover, printQuakes method will prints out countries with number of earthquakes.
+- It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods. **addKey()** is a helper method which draws key in GUI and **isInCountry()** is also a helper method is used to test whether a given earthquake is in a given country also adding the country property to the properties of the earthquake feature if it's in one of the countries. Moreover, there is a method called **printQuakes()** which prints out countries with number of earthquakes. 
 
-**CityMarker Class;**
- 
-- This class extends SimplePointMarker to mark the cities on the map.
-
-**EarthquakeMarker Class;**
-
-- An abstract class which iplements a visual marker for earthquakes on an earthquake map. It has two subclasses: LandQuakeMarker and OceanQuakeMarker. EarthquakeMarker class allows these two classes to implement abstract method **drawEarthquake** differently. Moreover, class includes method **colorDetermine** which allows the derived classes to determine color of marker from depth of the earthquake.
-
-**LandQuakeMarker and OceanQuakeMarker Classes;**
-
-- The main difference between these two child classes is that they both implement markers on different places. LandQuakeMarker implements quakes markers  on the land; however, OceanQuakeMarker implements the it on the ocean.
+### Code of printQuakes();
 
 ``` Java	
 	private void printQuakes() {
@@ -59,3 +49,19 @@ The project has an interactive map which displays where the earthquakes have occ
 		}
 		System.out.println("OCEAN QUAKES: " + totalWaterQuakes);
 	}
+```
+
+
+
+**CityMarker Class;**
+ 
+- This class extends SimplePointMarker to mark the cities on the map.
+
+**EarthquakeMarker Class;**
+
+- An abstract class which iplements a visual marker for earthquakes on an earthquake map. It has two subclasses: LandQuakeMarker and OceanQuakeMarker. EarthquakeMarker class allows these two classes to implement abstract method **drawEarthquake** differently. Moreover, class includes method **colorDetermine** which allows the derived classes to determine color of marker from depth of the earthquake.
+
+**LandQuakeMarker and OceanQuakeMarker Classes;**
+
+- The main difference between these two child classes is that they both implement markers on different places. LandQuakeMarker implements quakes markers  on the land; however, OceanQuakeMarker implements the it on the ocean.
+
