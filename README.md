@@ -37,7 +37,7 @@ The project has an interactive map which displays where the earthquakes have occ
 
 - The main difference between these two child classes is that they both implement markers on different places. LandQuakeMarker implements quakes markers  on the land; however, OceanQuakeMarker implements the it on the ocean.
 
-```	
+``` Java	
 	private void printQuakes() {
 		int totalWaterQuakes = quakeMarkers.size();
 		for (Marker country : countryMarkers) {
