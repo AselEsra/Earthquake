@@ -11,13 +11,12 @@ A GUI created by using Processing and Unfolding Maps library functions in Eclips
 This is a project that I have created with the help of the Object Oriented Programming in Java course offered by 
 UC San Diego through Coursera. The project was half created and the other half was asked to implement throughout the course. However, in the course the project has further features but to not make it more complex I haven't added all of them.
 
-**Processing and Unfolding map libraries;**
+### Processing and Unfolding map libraries;
 
-Processing library: an open-source graphical library and integrated development environment (IDE) built for the electronic arts, new media art, and visual design communities with the purpose of teaching non-programmers the fundamentals of computer programming in a visual context.
-
+**Processing library:** an open-source graphical library and integrated development environment (IDE) built for the electronic arts, new media art, and visual design communities with the purpose of teaching non-programmers the fundamentals of computer programming in a visual context.
 Processing uses the Java language, with additional simplifications such as additional classes and aliased mathematical functions and operations. It also provides a graphical user interface for simplifying the compilation and execution stage. 
 
-Unfolding maps library: Enables you to quickly create interactive maps. Simply create geo-positioned markers to display data on a map. The library supports loading and displaying user-defined shapes, such as points, lines, or polygons.
+**Unfolding maps library:** Enables you to quickly create interactive maps. Simply create geo-positioned markers to display data on a map. The library supports loading and displaying user-defined shapes, such as points, lines, or polygons.
 
 ## Description Of The Project
 
