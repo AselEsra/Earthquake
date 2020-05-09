@@ -3,8 +3,8 @@ Eartquake-Data
 
 - Name and Surname: Asel Esra Ozyilmaz
 - Email: esra.ozyilmaz@iaau.edu.kg
-- Study: Computer Science Department of Alatoo International University.
-- Project for CS-102 Java class.
+- Computer Science Department of Alatoo International University.
+- Individual final project for CS-102 Java class.
 
 A GUI created by using Processing and Unfolding Maps library functions in Eclipse IDE to display and print out the earthquakes which have occured all over the world.
 
@@ -15,7 +15,22 @@ UC San Diego through Coursera. The project was half created and the other half w
 
 ss of the map
 
-The project has an interactive map which displays where the earthquakes have occured with the help of markers. Optionally you can work online or offline with it. If you work online GoogleMapProvider will display a map otherwise an offline map is displayed.The data of earthquakes are taken from this live RSS feed https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom and parsed by the course in order to read the data inside it. In addition, there are two more files: cityFile and countryFile. countryFile includes features of the countries such as: name, location, type. If an earthquake occurs in a particular country it is added as a marker to the map. cityFile on the other hand, includes cities and their properties just like countryFile. The project also includes several classes which are described below.
+The project has an interactive map which displays where the earthquakes have occured with the help of markers. Optionally you can work online or offline with it. If you work online GoogleMapProvider will display a map otherwise an offline map is displayed.The data of earthquakes are taken from this live RSS feed https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.atom and parsed by the course in order to read the data inside it. In addition, there are two more files: cityFile and countryFile. countryFile includes features of the countries such as: name, location, type. If an earthquake occurs in a particular country it is added as a marker to the map. cityFile on the other hand, includes cities and their properties just like countryFile. A RuntimeException is checked as shown below;
+
+### Code of exception handling;
+
+``` Java	
+//read in city data and check if an runtime exception occurs
+try {
+   List<Feature> cities = GeoJSONReader.loadData(this, cityFile);
+   cityMarkers = new ArrayList<Marker>();
+   for(Feature city : cities) {
+	cityMarkers.add(new CityMarker(city));
+}}
+catch (RuntimeException e) {
+    System.out.println("Exception occured in Runtime");
+}
+```
 
 ![cityMarker](https://user-images.githubusercontent.com/64264345/81471618-325a4780-9214-11ea-8e99-df2282f58376.png) ![UML class diagram](https://user-images.githubusercontent.com/64264345/81473170-8c600a80-921e-11ea-9533-7f2078ac851e.png)
 
@@ -24,34 +39,6 @@ The project has an interactive map which displays where the earthquakes have occ
 **EarthquakeCityMarker Class;**
 
 - It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods. **addKey()** is a helper method which draws key in GUI and **isInCountry()** is also a helper method is used to test whether a given earthquake is in a given country also adding the country property to the properties of the earthquake feature if it's in one of the countries. Moreover, there is a method called **printQuakes()** which prints out countries with number of earthquakes. 
-
-### Code of printQuakes();
-
-``` Java	
-	private void printQuakes() {
-		int totalWaterQuakes = quakeMarkers.size();
-		for (Marker country : countryMarkers) {
-			String countryName = country.getStringProperty("name");
-			int numQuakes = 0;
-			for (Marker marker : quakeMarkers)
-			{
-				EarthquakeMarker eqMarker = (EarthquakeMarker)marker;
-				if (eqMarker.isOnLand()) {
-					if (countryName.equals(eqMarker.getStringProperty("country"))) {
-						numQuakes++;
-					}
-				}
-			}
-			if (numQuakes > 0) {
-				totalWaterQuakes -= numQuakes;
-				System.out.println(countryName + ": " + numQuakes);
-			}
-		}
-		System.out.println("OCEAN QUAKES: " + totalWaterQuakes);
-	}
-```
-
-
 
 **CityMarker Class;**
  
