@@ -26,6 +26,6 @@ ss of the UMLs
 It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods such as isInCountry to test whether a given earthquake is in a given country. This will also add the country property to the properties of the earthquake feature if it's in one of the countries. Moreover, printQuakes method will prints out countries with number of earthquakes.
 
  **CityMarker;**
-![cityMarker](https://user-images.githubusercontent.com/64264345/81471618-325a4780-9214-11ea-8e99-df2282f58376.png)
-This class extends SimplePointMarker to mark the cities on the map
+![cityMarker](https://user-images.githubusercontent.com/64264345/81471618-325a4780-9214-11ea-8e99-df2282f58376.png) This class extends SimplePointMarker to mark the cities on the map
+
 
