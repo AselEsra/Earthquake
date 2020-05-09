@@ -21,9 +21,9 @@ The project has an interactive map which displays where the earthquakes have occ
 
 > As shown above, the project contains 5 classes: EarthquakeCityMap, CityMarker, EarthqukeMarker, LandQuakeMarker and OceanQuakeMarker. Let's further investigate them;
 
-- **EarthquakeCityMarker;**
+ **EarthquakeCityMarker;**
 
-It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods such as isInCountry to test whether a given earthquake is in a given country. This will also add the country property to the properties of the earthquake feature if it's in one of the countries. Moreover, printQuakes method will prints out countries with number of earthquakes.
+- It is the main class which extends PApplet in order to create a GUI. This class includes some methods and helper methods such as isInCountry to test whether a given earthquake is in a given country. This will also add the country property to the properties of the earthquake feature if it's in one of the countries. Moreover, printQuakes method will prints out countries with number of earthquakes.
 
  **CityMarker;**
  
