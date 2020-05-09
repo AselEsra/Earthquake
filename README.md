@@ -1,7 +1,7 @@
 Eartquake-Data
 ==================================================================
 
-# Author Info
+> Author Info
 
 - Name and Surname: Asel Esra Ozyilmaz
 - Email: esra.ozyilmaz@iaau.edu.kg
