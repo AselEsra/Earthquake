@@ -11,7 +11,7 @@ A GUI created by using Processing and Unfolding Maps library functions in Eclips
 This is a project that I have created with the help of the Object Oriented Programming in Java course offered by 
 UC San Diego through Coursera. The project was half created and the other half was asked to implement throughout the course. However, in the course the project has further features but to not make it more complex I haven't added all of them.
 
-# Description Of The Project
+## Description Of The Project
 
 ss of the map
 
