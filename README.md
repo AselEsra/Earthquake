@@ -29,7 +29,7 @@ It is the main class which extends PApplet in order to create a GUI. This class 
  
 - This class extends SimplePointMarker to mark the cities on the map.
 
-### EarthquakeMarker;
+ - **EarthquakeMarker;**
 
 An abstract class which iplements a visual marker for earthquakes on an earthquake map. It has two subclasses: LandQuakeMarker and OceanQuakeMarker. EarthquakeMarker class allows these two classes to implement abstract method **drawEarthquake** differently. Moreover, class includes method **colorDetermine** which allows the derived classes to determine color of marker from depth of the earthquake.
 
