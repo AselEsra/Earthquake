@@ -20,7 +20,7 @@ Processing uses the Java language, with additional simplifications such as addit
 
 ## Description Of The Project
 
-![online](https://user-images.githubusercontent.com/64264345/81493697-6b51f500-92c4-11ea-9770-faf08fc44470.png | width=100)
+<img src="https://user-images.githubusercontent.com/64264345/81493697-6b51f500-92c4-11ea-9770-faf08fc44470.png" width="100">
 ![zoomed](https://user-images.githubusercontent.com/64264345/81493699-73119980-92c4-11ea-9f8e-3081fd3982f2.png =250x250)
 ![console](https://user-images.githubusercontent.com/64264345/81493700-760c8a00-92c4-11ea-8d53-df1326af7941.png)
 
