@@ -1,4 +1,4 @@
-Eartquake-Data
+Earthquake-Data
 ==================================================================
 
 - Name and Surname: Asel Esra Ozyilmaz
