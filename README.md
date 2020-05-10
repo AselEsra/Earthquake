@@ -20,7 +20,9 @@ Processing uses the Java language, with additional simplifications such as addit
 
 ## Description Of The Project
 
-ss of the map
+![online](https://user-images.githubusercontent.com/64264345/81493697-6b51f500-92c4-11ea-9770-faf08fc44470.png)
+![zoomed](https://user-images.githubusercontent.com/64264345/81493699-73119980-92c4-11ea-9f8e-3081fd3982f2.png)
+![console](https://user-images.githubusercontent.com/64264345/81493700-760c8a00-92c4-11ea-8d53-df1326af7941.png)
 
 The project has an interactive map which displays where the earthquakes have occured with the help of markers. Optionally you can work online or offline with it. If you work online **GoogleMapProvider()** will display a map otherwise, an offline map is displayed. 
 
